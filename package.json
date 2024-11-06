@@ -1,0 +1,15 @@
+{
+  "name": "crear-cv",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Hugo Daniel Sancima",
+  "license": "ISC",
+  "description": "C.V. Actualizado 2024",
+  "dependencies": {
+    "gh-pages": "^6.2.0"
+  }
+}
