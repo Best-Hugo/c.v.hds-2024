@@ -78,16 +78,17 @@ img {
     box-shadow: 5px 5px 15px black;
 }
 
-aside > article > p {
+img + p {
+    margin-top: 10px;
+    font: bold 15px 'arial narrow';
+    text-align: center;
+}
+h2 + p {
     font-size: 15px;
     text-align: justify;
 }
 
-img + p {
-    margin-top: 10px;
-    font: bold 20px 'arial narrow';
-    text-align: center;
-}
+
 
 aside > article > h2 {
     font-size: 16px;
@@ -99,18 +100,15 @@ article > p > span {
     padding-bottom: 3px;
     border-bottom: 1px solid white;
 }
-article > p > span:last-child {
-    border: none;
-}
 
-#linkedin {
-    padding: 0 2.5px;
-    font: normal 13px "arial black";
-    border-radius: 2px;
-    background: #CD9FA5;
-    color: black;
-}
 td {
     padding: 2px 5px;
+}
+td>img {
+    border-radius: 0;
+    margin-left: 0;
+    margin-top: 3px;
+    margin-bottom: -5px;
+    height: 24px;
 }
 
