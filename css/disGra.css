@@ -1,0 +1,115 @@
+main {
+    width: 210mm;
+    height: 297mm;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10mm 10mm 10mm 25mm;
+    background: white;
+    border: 1px solid white;
+}
+
+
+section, aside {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 7mm 2mm 7mm 2mm;
+    box-shadow: 5px 5px 15px blue;
+}
+
+
+section {
+    background: gray;
+    /*border: 1px solid white;*/
+    width: 120mm;
+    color: white;
+}
+section > article > h1 {
+    font: bold 70px 'encabezado';
+    margin-top: 0;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+    text-shadow: 5px 5px 15px black;
+}
+section > article > h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-shadow: 5px 5px 15px black;
+    font-size: 23px;
+}
+
+section > article > a {
+    display: none;
+}
+
+aside {
+    justify-content: start;
+    background: #110C3B;
+    border: 1px solid #110C3B;
+    width: 62mm;
+    margin-right: 3mm;
+    color: #CD9FA5;
+    font: normal 18px "arial narrow";
+}
+aside article {
+    margin-bottom: 50px;
+}
+
+p, h2{
+    font-family: 'arial narrow';
+}
+h2 {
+    margin-bottom: 5px;
+}
+section article p {
+    /*letter-spacing: 0.5px;*/
+    font-size: 16px;
+    margin-top: 5px;
+    /*line-height: 22px;*/
+}
+section article:first-child p {
+    font-size: 13px;
+}
+
+img {
+    border-radius: 50%;
+    margin-left: 15px;
+    box-shadow: 5px 5px 15px black;
+}
+
+img + p {
+    margin-top: 10px;
+    font: bold 15px 'arial narrow';
+    text-align: center;
+}
+h2 + p {
+    font-size: 15px;
+    text-align: justify;
+}
+
+
+
+aside > article > h2 {
+    font-size: 16px;
+    text-shadow: 5px 5px 15px blue;
+}
+article > p > span {
+    display: block;
+    margin: 3px 0;
+    padding-bottom: 3px;
+    border-bottom: 1px solid white;
+}
+
+td {
+    padding: 2px 5px;
+}
+td>img {
+    border-radius: 0;
+    margin-left: 0;
+    margin-top: 3px;
+    margin-bottom: -5px;
+    height: 24px;
+    color: gray;
+}

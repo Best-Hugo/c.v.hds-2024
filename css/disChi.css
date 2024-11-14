@@ -1,0 +1,107 @@
+@media (max-width: 414px){
+    main{
+        border: 1px solid black;
+        width: 414px;
+        padding: 5mm 0;
+    }
+    
+    section, aside {
+        padding: 0;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    article {
+        width: auto;
+        margin: 2.5mm
+    }
+
+    /**** menú colapsable ****/
+
+    main {
+        height: auto;
+        --menMos: scale(1);
+        --menOcu: scale(0);
+    }
+
+    main:has(.colapsable:target){
+        --menMos: scale(0);
+        --menOcu: scale(1);
+        --clip: inset(0 100% 0 100%);
+    }
+
+    .navMen {
+        display: inline-block;
+        position: absolute;
+        z-index: 10;
+        transform: var(--menMos);
+        margin-top: -15px;
+    }
+    .navMen-sec {
+        transform: var(--menOcu);
+    }
+    .icon {
+        border-radius: 0;
+        width: 40px;
+        display: block;
+        margin: 0;
+        
+    }
+
+    .icon:hover {
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+
+    .colapsable {
+        position: absolute;
+        left: 0;
+        top: 210px;
+        width: 70mm;
+        height: 97.3%;
+        padding-top: 30px;
+        padding-right: 15px;
+        clip-path: var(--clip, inset(0 100% 100% 0));
+        transition: clip-path 0.5s;
+    }
+
+    /**** Fin menú colapsable ****/
+
+    section> article > h1 {
+        
+        letter-spacing: 0;
+        text-align: center;
+    }
+
+    section > article > h2 {
+        margin-top: 60px;
+        padding-left: 5px;
+        
+    }
+
+    /*
+    section > article > a {
+        display: block;
+    }
+    
+    aside { 
+       position: absolute;
+       left: 0;
+       top: 225px;
+       width: 70mm;
+       height: 97.3%;
+       padding-top: 30px;
+       padding-right: 15px;
+    }
+       */
+
+    aside > article {
+        margin: 20px auto;
+    } 
+    
+    aside > article:last-child {
+        padding: 0 3px 0 10px;
+    }
+}
