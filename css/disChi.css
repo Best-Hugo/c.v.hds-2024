@@ -3,6 +3,15 @@
         border: 1px solid black;
         width: 414px;
         padding: 5mm 0;
+        height: auto;
+        --menMos: scale(1);
+        --menOcu: scale(0);
+    }
+
+    main:has(.colapsable:target){
+        --menMos: scale(0);
+        --menOcu: scale(1);
+        --clip: inset(0 0 0 0);
     }
     
     section, aside {
@@ -11,6 +20,7 @@
 
     section {
         width: 100%;
+        
     }
 
     article {
@@ -20,17 +30,8 @@
 
     /**** menú colapsable ****/
 
-    main {
-        height: auto;
-        --menMos: scale(1);
-        --menOcu: scale(0);
-    }
 
-    main:has(.colapsable:target){
-        --menMos: scale(0);
-        --menOcu: scale(1);
-        --clip: inset(0 100% 0 100%);
-    }
+    
 
     .navMen {
         display: inline-block;
@@ -47,7 +48,6 @@
         width: 40px;
         display: block;
         margin: 0;
-        
     }
 
     .icon:hover {
@@ -61,8 +61,10 @@
         top: 210px;
         width: 70mm;
         height: 97.3%;
+        
         padding-top: 30px;
         padding-right: 15px;
+        overflow-y: auto;
         clip-path: var(--clip, inset(0 100% 100% 0));
         transition: clip-path 0.5s;
     }
